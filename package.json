@@ -3,5 +3,8 @@
     "express": "^4.16.3",
     "lowdb": "^1.0.0",
     "socket.io": "^2.1.1"
-  }
+  },
+  "scripts": {
+    "now-start": "node index.js"
+  },
 }
