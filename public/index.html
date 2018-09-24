@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Milk MMO</title>
+    <link rel="stylesheet" href="https://gitcdn.link/repo/Chalarangelo/mini.css/master/dist/mini-default.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container" style="background: pink">
+        <div class="row">
+            <div class="col-lg-3" style="background: red">
+                <div class="card fluid">
+                    <div class="section">
+                        <h3>Top Guilds</h3>
+                        <div class="container" style="background: green">
+                            <scoreboard></scoreboard>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" style="background: orange">
+                <div class="card fluid">
+                    <div class="section">
+                        <h1>Milk.</h1>
+                        <input class="guild" type="username" id="username" placeholder="Guild" value="xX_Milk_boiZ_Xx"
+                            maxlength="15"></input>
+                        <div id="drawing" onclick="drink()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3" style="background: yellow">
+                <div class="card fluid">
+                    <div class="section">
+                        <h3>Live Feed</h3>
+                        <div class="container livefeed" style="background: green">
+                            <liveFeed></liveFeed>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center">
+        <span>By Declan Li-Carney</span>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.4/svg.min.js"></script>
+    <script type="text/javascript" src="riot+compiler.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="riot/tag" src="livefeed.tag"></script>
+    <script type="riot/tag" src="scoreboard.tag"></script>
+    <script>
+        riot.mount('livefeed')
+        riot.mount('scoreboard')
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+#drawing {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+body {
+    background: grey;
+}
+
+.section {
+    text-align: center;
+}
+
+.livefeed {
+    text-align: right;
+}
+
+.card {
+    height: 90vh;
+}
+
+.guild {
+    text-align: center;
+}
