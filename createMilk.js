@@ -6,5 +6,4 @@ for (var y = 0; y < 6; y++) {
         a[i] = x * milk2[i] * 2
     })
     console.log(milkXY);
-
 }
